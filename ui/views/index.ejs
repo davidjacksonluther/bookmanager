@@ -1,11 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" /> 
+  <title></title> 
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script> 
+  <script type="text/javascript" src="js/JsBarcode.all.js"></script> 
+ </head> 
+ <body> 
+	hello world
+  <svg id="svgcode"></svg> 
+  <!-- or --> 
+  <canvas id="canvascode"></canvas> 
+  <!-- or --> 
+  <img id="imgcode" /> 
+  <script>  
+        $("#svgcode").JsBarcode('Hi!');//or JsBarcode("#svgcode", "Hi!");  
+
+        $("#canvascode").JsBarcode('Hello world!');//or JsBarcode("#canvascode", "Hello world!");  
+  
+        $("#imgcode").JsBarcode("I'm huangenai!");//or JsBarcode("#imgcode", "I'm huangenai!");  
+  </script> 
+ </body>
 </html>
